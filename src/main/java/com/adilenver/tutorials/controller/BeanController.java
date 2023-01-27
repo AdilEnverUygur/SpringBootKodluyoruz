@@ -1,6 +1,6 @@
-package com.adilenver.controller;
+package com.adilenver.tutorials.controller;
 
-import com.adilenver.bean.BeanConfig;
+import com.adilenver.tutorials.bean.BeanConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

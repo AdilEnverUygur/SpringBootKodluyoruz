@@ -1,4 +1,4 @@
-package com.adilenver.dto;
+package com.adilenver.tutorials.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

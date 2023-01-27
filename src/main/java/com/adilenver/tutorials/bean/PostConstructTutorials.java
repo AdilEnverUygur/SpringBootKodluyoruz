@@ -1,4 +1,4 @@
-package com.adilenver.bean;
+package com.adilenver.tutorials.bean;
 
 import org.springframework.stereotype.Controller;
 

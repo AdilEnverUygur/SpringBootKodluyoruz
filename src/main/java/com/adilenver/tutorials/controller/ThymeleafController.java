@@ -1,6 +1,6 @@
-package com.adilenver.controller;
+package com.adilenver.tutorials.controller;
 
-import com.adilenver.dto.ProductDto;
+import com.adilenver.tutorials.dto.ProductDto;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,6 +1,6 @@
-package com.adilenver.bean;
+package com.adilenver.tutorials.bean;
 
-import com.adilenver.dto.BeanDto;
+import com.adilenver.tutorials.dto.BeanDto;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;

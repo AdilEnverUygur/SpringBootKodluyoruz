@@ -1,4 +1,4 @@
-package com.adilenver.dto;
+package com.adilenver.tutorials.dto;
 
 
 import java.util.Date;
