@@ -1,5 +1,6 @@
 package com.adilenver.controller;
 
+import com.adilenver.dto.ProductDto;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -61,9 +62,9 @@ public class ThymeleafController {
     //http://localhost:8080/thymeleaf5
     @GetMapping("/thymeleaf5")
     public String getThymeleaf5ModelObject(Model model) {
-//        model.addAttribute("key_model1", "text");
-//        ProductDto productDto = ProductDto.builder().productId(0L).productName("Product Name").productPrice(2500).build();
-//        model.addAttribute("key_model2",productDto);
+        model.addAttribute("key_model1", "text");
+        ProductDto productDto = ProductDto.builder().productId(0L).productName("Product Name").productPrice(2500).build();
+        model.addAttribute("key_model2",productDto);
 
         return "thymeleaf5";
     }
@@ -73,14 +74,13 @@ public class ThymeleafController {
     @GetMapping("/thymeleaf6")
     public String getThymeleaf6ModelObjectList(Model model) {
         model.addAttribute("key_model1", "text");
-//        List<ProductDto> myList = new ArrayList<>();
-//        myList.add(ProductDto.builder().productId(1L).productName("Ürün adı1").productPrice(1500).build());
-//        myList.add(ProductDto.builder().productId(2L).productName("Ürün adı2").productPrice(2500).build());
-//        myList.add(ProductDto.builder().productId(3L).productName("Ürün adı3").productPrice(3500).build());
-//        myList.add(ProductDto.builder().productId(4L).productName("Ürün adı4").productPrice(4500).build());
+        List<ProductDto> myList = new ArrayList<>();
+        myList.add(ProductDto.builder().productId(1L).productName("Ürün adı1").productPrice(1500).build());
+        myList.add(ProductDto.builder().productId(2L).productName("Ürün adı2").productPrice(2500).build());
+        myList.add(ProductDto.builder().productId(3L).productName("Ürün adı3").productPrice(3500).build());
+        myList.add(ProductDto.builder().productId(4L).productName("Ürün adı4").productPrice(4500).build());
 
-
-//        model.addAttribute("product_list",myList);
+        model.addAttribute("product_list",myList);
 
         return "thymeleaf6";
     }
