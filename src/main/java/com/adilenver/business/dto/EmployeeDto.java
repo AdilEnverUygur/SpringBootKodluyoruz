@@ -1,4 +1,4 @@
-package com.adilenver.dto;
+package com.adilenver.business.dto;
 //DTO:Data Transfer Object
 
 import lombok.AllArgsConstructor;

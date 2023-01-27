@@ -1,4 +1,4 @@
-package com.adilenver.entity;
+package com.adilenver.data.entity;
 
 import lombok.Builder;
 import lombok.Data;
