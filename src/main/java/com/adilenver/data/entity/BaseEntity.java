@@ -2,6 +2,7 @@ package com.adilenver.data.entity;
 
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
@@ -20,8 +21,9 @@ import javax.persistence.*;
 //hibernate jpa
 @MappedSuperclass
 
-//Auditing
+//Auditing -->Auditing yapisi biz datalarimizda  ne zaman ne yaptik bilgilerine erismek icin
 @EntityListeners(AuditingEntityListener.class)
+@JsonIgnoreProperties(value = {"created_date,update_date"}, allowGetters = true)
 public class BaseEntity {
 
     @Id
